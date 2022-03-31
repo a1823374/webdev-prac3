@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Practical Excercise 3 - Part 3</title>
+    <link rel="stylesheet" type="text/css" href="task3.css">
+    <script src="task3.js"></script>
+
+</head>
+
+<body>
+
+    <div id="main" class="container">
+        <button class="right" onclick="clickMenu()">MENU</button>
+        <!-- Task 3.3-->
+        <h1>Part 3 - Javascript Playground</h1>
+        <div id="mcount" onmouseover="mouseOver()"></div>
+        <!-- Task 3.1-->
+        <div id="posts"></div>
+        <!-- Task 3.2-->
+        <hr />
+        <textarea id="box" rows="4" cols="60">Text</textarea>
+        <!-- Task 3.2-->
+        <br />
+        <div class="controls left">
+            <input type="number" name="quantity" value="1" /><br />
+            <input type="radio" name="color" value="blue" onclick="setColor('blue')" /> Blue<br />
+            <input type="radio" name="color" value="red" onclick="setColor('red')" /> Red<br />
+            <button id="postButton" type="button" onclick="clickPost()">Post</button>
+            <!-- Task 3.2-->
+        </div>
+        <div class="controls left">
+            <input type="range" name="visible" min="1" max="10" value="10" /><br />
+            <input type="checkbox" name="style" value="bold" /> Bold<br />
+            <input type="checkbox" name="style" value="italic" /> Italic<br />
+            <select>
+                    <option disabled selected value="-1">Choose a post to reply to</option>
+                </select>
+        </div>
+        <hr />
+    </div>
+
+    <div id="menu" class="container" style="display:none;">
+        <button class="right" onclick="clickBack()">BACK</button>
+        <!-- Task 3.3-->
+        <p>&nbsp;</p>
+        <span>Background Color:</span><input type="text" onchange="changeColor(this)">
+        <!-- Task 3.5-->
+    </div>
+
+</body>
+
+</html>
